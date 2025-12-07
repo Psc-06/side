@@ -1,0 +1,526 @@
+.report-container {
+  width: 100%;
+}
+
+.report-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.report-header h1 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  flex: 1;
+}
+
+.report-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Food Card */
+.food-card {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(139, 115, 85, 0.1));
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.food-name {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.food-description {
+  color: #666;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Calories Section */
+.calories-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.calories-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  border-top: 4px solid var(--primary-color);
+}
+
+.calories-card h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.calories-display {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.calories-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.calories-unit {
+  font-size: 1.2rem;
+  color: #999;
+  font-weight: 500;
+}
+
+.portion-info {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Macros Section */
+.macros-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.macros-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.macro-chart {
+  margin-bottom: 1.5rem;
+}
+
+.macro-bar {
+  display: flex;
+  height: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.macro-segment {
+  transition: all 0.3s;
+}
+
+.macro-segment.carbs {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.macro-segment.protein {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+.macro-segment.fats {
+  background: linear-gradient(135deg, #f39c12, #d68910);
+}
+
+.macro-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.macro-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(139, 115, 85, 0.05));
+  border-radius: 8px;
+}
+
+.macro-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.macro-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.macro-dot.carbs {
+  background: #3498db;
+}
+
+.macro-dot.protein {
+  background: #e74c3c;
+}
+
+.macro-dot.fats {
+  background: #f39c12;
+}
+
+.macro-value {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Thermic Section */
+.thermic-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.thermic-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.thermic-badge {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(139, 115, 85, 0.1));
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.thermic-badge p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+/* Ayurveda Impact Section */
+.ayurveda-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.ayurveda-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.dosha-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.dosha-impact-item {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(139, 115, 85, 0.05));
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.dosha-impact-item h4 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.dosha-score-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dosha-indicator {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Recommendation Section */
+.recommendation-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.recommendation-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.compatibility-message {
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.compatibility-message.good {
+  background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(46, 204, 113, 0.1));
+  border-left: 4px solid #27ae60;
+  color: #27ae60;
+}
+
+.compatibility-message.neutral {
+  background: linear-gradient(135deg, rgba(149, 165, 166, 0.1), rgba(189, 195, 199, 0.1));
+  border-left: 4px solid #95a5a6;
+  color: #7f8c8d;
+}
+
+.compatibility-message.avoid {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(192, 57, 43, 0.1));
+  border-left: 4px solid #e74c3c;
+  color: #c0392b;
+}
+
+.compatibility-message p {
+  margin: 0;
+}
+
+/* Timing Section */
+.timing-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.timing-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.timing-info {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(139, 115, 85, 0.05));
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0;
+}
+
+/* Suggestions Section */
+.suggestions-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.suggestions-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions-list li {
+  padding: 0.75rem 0;
+  color: #666;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.suggestions-list li:last-child {
+  border-bottom: none;
+}
+
+/* Report Actions */
+.report-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.report-actions button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .report-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dosha-impact-grid,
+  .macro-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report-actions {
+    flex-direction: column;
+  }
+
+  .report-actions button {
+    width: 100%;
+  }
+
+  .food-name {
+    font-size: 1.5rem;
+  }
+
+  .calories-value {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .report-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .report-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .food-card {
+    padding: 1.5rem;
+  }
+
+  .food-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .food-description {
+    font-size: 0.95rem;
+  }
+
+  .calories-card {
+    padding: 1.5rem;
+  }
+
+  .calories-value {
+    font-size: 2.2rem;
+  }
+
+  .calories-unit {
+    font-size: 1rem;
+  }
+
+  .portion-info {
+    font-size: 0.9rem;
+  }
+
+  .macros-section {
+    padding: 1.5rem;
+  }
+
+  .macros-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .macro-bar {
+    height: 25px;
+  }
+
+  .macro-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .macro-item {
+    padding: 0.75rem;
+    flex-direction: column;
+  }
+
+  .macro-label {
+    font-size: 0.8rem;
+  }
+
+  .macro-value {
+    font-size: 1rem;
+  }
+
+  .thermic-section,
+  .ayurveda-section,
+  .recommendation-section,
+  .timing-section,
+  .suggestions-section {
+    padding: 1.5rem;
+  }
+
+  .ayurveda-section h3,
+  .recommendation-section h3,
+  .timing-section h3,
+  .suggestions-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .dosha-impact-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .dosha-impact-item {
+    padding: 1rem;
+  }
+
+  .dosha-indicator {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .compatibility-message {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .suggestions-list li {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .report-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .report-actions button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    min-height: 44px;
+  }
+}

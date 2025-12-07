@@ -1,0 +1,383 @@
+.scanner-container {
+  width: 100%;
+}
+
+.scanner-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.scanner-header h1 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  flex: 1;
+}
+
+.scanner-content {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+/* Image Upload Section */
+.image-upload-section {
+  margin-bottom: 2rem;
+}
+
+.upload-box {
+  border: 2px dashed var(--primary-color);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(139, 115, 85, 0.05));
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: var(--secondary-color);
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(139, 115, 85, 0.1));
+}
+
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-icon {
+  font-size: 3rem;
+}
+
+.upload-placeholder p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.upload-button {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.upload-button:hover {
+  background: var(--secondary-color);
+}
+
+.image-preview {
+  position: relative;
+  display: inline-block;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.uploaded-filename {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  font-weight: 500;
+}
+
+.remove-image-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--danger-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Search Section */
+.search-section {
+  margin-top: 2rem;
+}
+
+.search-section h2 {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.search-hint {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(212, 165, 116, 0.1);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.search-box {
+  margin-bottom: 1.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.1);
+}
+
+.search-results {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.search-result-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.search-result-item:hover {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(139, 115, 85, 0.05));
+}
+
+.result-info h4 {
+  color: var(--secondary-color);
+  margin: 0 0 0.3rem 0;
+  font-size: 1.05rem;
+}
+
+.result-info p {
+  color: #999;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.result-arrow {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.no-results {
+  padding: 2rem;
+  text-align: center;
+  color: #999;
+}
+
+/* Selected Food Preview */
+.selected-food-preview {
+  margin-top: 2rem;
+}
+
+.preview-card {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(139, 115, 85, 0.05));
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.preview-card h2 {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.nutrition-quick-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.nutrition-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nutrition-item .label {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.nutrition-item .value {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scanner-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .scanner-content {
+    padding: 1.5rem;
+  }
+
+  .nutrition-quick-view {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .scanner-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .scanner-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .scanner-content {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .upload-box {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .upload-icon {
+    font-size: 2.5rem;
+  }
+
+  .upload-placeholder p {
+    font-size: 1rem;
+  }
+
+  .upload-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .image-preview img {
+    max-height: 250px;
+  }
+
+  .search-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    padding: 0.75rem;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+
+  .search-results {
+    max-height: 300px;
+    border-radius: 6px;
+  }
+
+  .search-result-item {
+    padding: 0.75rem;
+  }
+
+  .result-info h4 {
+    font-size: 1rem;
+  }
+
+  .result-info p {
+    font-size: 0.85rem;
+  }
+
+  .preview-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .nutrition-quick-view {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .nutrition-item {
+    padding: 0.5rem;
+  }
+
+  .nutrition-item .label {
+    font-size: 0.8rem;
+  }
+
+  .nutrition-item .value {
+    font-size: 1.2rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .action-buttons button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    min-height: 44px;
+  }
+}
