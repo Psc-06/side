@@ -1,0 +1,61 @@
+{
+  "packageId": "app.netlify.jade_taffy_91a95d.twa",
+  "host": "sideeye.com",
+  "name": "Ayurveda Food Scanner",
+  "launcherName": "Ayurveda",
+  "display": "standalone",
+  "themeColor": "#8B7355",
+  "themeColorDark": "#000000",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#F8F7F4",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://www.flaticon.com/free-icon/network_10221159?term=url&page=1&position=3&origin=tag&related_id=10221159",
+  "maskableIconUrl": "https://your-netlify-site.netlify.app/icon-512.png",
+  "monochromeIconUrl": "https://upload.wikimedia.org/path/to/square512image.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "C:\\Users\\pradh\\Downloads\\Sideye-main\\Sideye-main\\android.keystore",
+    "alias": "android"
+  },
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [
+    {
+      "name": "Scanner",
+      "shortName": "Scan",
+      "url": "https://jade-taffy-91a95d.netlify.app/?page=scanner",
+      "chosenIconUrl": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23d4a574' width='96' height='96'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' font-size='60' fill='white' font-family='Arial'>%F0%9F%93%B8</text></svg>"
+    },
+    {
+      "name": "Browse Foods",
+      "shortName": "Browse",
+      "url": "https://jade-taffy-91a95d.netlify.app/?page=browse",
+      "chosenIconUrl": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect fill='%23d4a574' width='96' height='96'/><text x='50%' y='50%' text-anchor='middle' dy='.3em' font-size='60' fill='white' font-family='Arial'>%F0%9F%93%9A</text></svg>"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://jade-taffy-91a95d.netlify.app/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://jade-taffy-91a95d.netlify.app/",
+  "minSdkVersion": 21,
+  "orientation": "portrait-primary",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [],
+  "appVersion": "1"
+}
